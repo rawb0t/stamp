@@ -131,8 +131,8 @@ module.exports = configure(function (ctx) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Stamp',
-        short_name: 'Stamp',
+        name: 'StampBot',
+        short_name: 'StampBot',
         description: ' A Bitcoin Cash powered internet relay chat',
         display: 'standalone',
         orientation: 'portrait',
@@ -171,7 +171,7 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
     cordova: {
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
-      id: 'org.cashweb.stamp'
+      id: 'org.cashweb.stampbot'
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
@@ -199,7 +199,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'stamp',
+        appId: 'stampbot',
         extraFiles: [
           { from: 'src-electron/icons', to: 'resources/icons' }
         ],
