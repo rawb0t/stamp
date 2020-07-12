@@ -175,6 +175,9 @@ export default {
     getContact: (state) => (address) => {
       return state.contacts[address] ? state.contacts[address] : { ...pendingRelayData, profile: { ...pendingRelayData.profile } }
     },
+    getContacts: (state) => {
+      return state.contacts
+    },
     getContactProfile: (state) => (address) => {
       return state.contacts[address] ? state.contacts[address].profile : { ...pendingRelayData.profile }
     },
