@@ -55,7 +55,7 @@ class MessageIterator implements AsyncIterator<MessageWrapper> {
     })
   }
 
-  async [Symbol.asyncIterator] () {
+  async *[Symbol.asyncIterator] () {
     this.db = await this.dbPromise
     this.iterator = this.db.iterator()
     return this
